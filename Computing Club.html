@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#About">Abut</a>
+      <a href="#Projects">Projects</a>
+      <a href="Events.html">Events</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div>
+      <h1>Welcome to BCIT Computing Club</h1>
+      <h3>Connect, Build, Engage</h3>
+    </div>
+  </div>
+  <main>
+    <h1>Info</h1>
+    <h3>Connect</h3>
+    <p>BCIT's computing club prioritizes the success of other BCIT students in pursuring a tech related career and a general interest in technology. Whethe </p>
+    <h3>Support</h3>
+    <h3>Compete</h3>
+    <p>Hack The Break is BCIT's biggest hackathon with over 100 participants last year and over 2500 dollars in cash prizes. Hack The Breaks main goal is to introduce students to the competiveness of hackathons and the numerous benefits they provide.</p>
+  </main>
+  <footer>
+    <h1>Contact</h1>
+    <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>
