@@ -15,34 +15,7 @@ justify-content: center;
     }
     .flex-container > div {
         padding: 20px;
-        background-color: #003366;
         margin: 20px;
-        align-content: center;
+        justify-content: center;
         }
-    .flex-container > img {
 
-
-        background-color: #f1f1f1;
-        
-        
-        width: 100px;
-        
-        
-        margin: 10px;
-
-        padding: 30px;
-        
-        
-        text-align: center;
-        
-        
-        
-        
-        font-size: 48px;
-
-        ;
-        
-        
-        }
-        
-        
