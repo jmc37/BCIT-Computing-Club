@@ -1,12 +1,12 @@
-const express = require('express');
-const app = express();
-let path = require('path');
-app.listen(process.env.PORT || 2000, function (err) {
+const express = require('express')
+const app = express()
+
+app.listen(process.env.PORT || 5000, function (err) {
     if (err)
         console.log(err);
 })
-app.use(express.static(path.join(__dirname)));
+app.use(express.static('public'));
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname+ '/index.html'))
-})
+app.get('/', function(req, res) {
+    res.sendFile('index.html', {root: __dirname })
+});
