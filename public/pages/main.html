@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title> 
-   <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/updated-logo.png" />
+
+   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./public/js/index.js"></script>
+  <script src="/js/index.js"></script>
 
 </head>
 
@@ -22,10 +24,10 @@
     
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="/pages/main.html">Home</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/Events.html">Events</a>
       </div>
     
     </div>
@@ -38,10 +40,10 @@
   <div class="banner">
     
     <div class="topnav" id="myTopnav">
-      <a href="./main.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./Events.html">Events</a>
+      <a href="main.html">Home</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/projects.html">Projects</a>
+      <a href="/pages/Events.html">Events</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -66,28 +68,26 @@
     <p>Hack The Break is BCIT's biggest hackathon with over 100 participants last year and over 2500 dollars in cash prizes. Hack The Breaks main goal is to introduce students to the competiveness of hackathons and the numerous benefits they provide.</p>
   </main>
 
-
+ 
   <footer>
     <!-- Contact Section -->
-    <h1>Contact</h1>
+    <div class="contact_header">Contact</div>
     <div class="container">
-      <form action="action_page.php">
+      <form action="/action_page.php">
     
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        
-        <label for="Subject">Subject</label>
-        <input type="text" id="Subject" name="Subject" placeholder="Your Subject..">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+  
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+      
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject matter.." required>
 
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
     
-        <label for="Message">Message</label>
-        <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
+        <input type="submit"  name = submit value="Submit">
     
       </form>
     </div>
