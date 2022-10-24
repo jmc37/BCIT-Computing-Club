@@ -19,3 +19,10 @@
     margin: 20px;
     justify-content: center;
 }
+/* @media screen and (max-width: 600px) {
+    .flex-container{
+        display;
+      display:contents;
+      overflow-x: auto;
+    }
+} */
