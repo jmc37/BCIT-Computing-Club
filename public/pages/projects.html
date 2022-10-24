@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects Page</title> 
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Projects Page</title>
+  <link rel="stylesheet" href="/css/projects.css">
   <script src="https://kit.fontawesome.com/ed11fcb7cb.js" crossorigin="anonymous"></script>
+
 
   <script src="/js/index.js"></script>
 
@@ -27,22 +28,53 @@
     </div>
     <div>
       <h1>Projects</h1>
-      <h3>Projects Page</h3>
     </div>
   </div>
   <main>
-    <h1>Events</h1>
-    <h3>Upcoming Club Events</h3>
+    <!-- Hackathon Submissions -->
+    <h1>Past Hackathon Submissions</h1>
+    <div class="flex-container">
 
+      <div><a href="https://devpost.com/software/chris-the-game"><img src="/images/projects/Chris_the_Game.png" alt=""></a></div>
+      <div><a href="https://devpost.com/software/medicai-jb6hln"><img src="../images/projects/medic_ai.jpg" alt=""></a></div>
+      <div><a href="https://devpost.com/software/melodify-my5ndk"><img src="../images/projects/melodify.png" alt=""></a></div>
+      <div><a href="https://devpost.com/software/slay-the-task"><img src="../images/projects/slay_the_task.png" alt=""></a></div>
+      <div><a href="https://devpost.com/software/study-buddies-g0vcmi"><img src="../images/projects/Study_buddies.png" alt=""></a></div>
+      <div><a href="https://devpost.com/software/the-man-cave"><img src="../images/projects/the_man_cave.png" alt=""></a></div>
+    </div>
   </main>
+  <!-- Contact Section -->
+  <div class="contact_container">
+    <div class="contact_header">Contact</div>
+    <div class="container">
+      <form action="/action_page.php">
+    
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+  
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+      
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject matter.." required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+    
+        <input type="submit"  name = submit value="Submit">
+      </form>
+    </div>
+  </div>
+
+
   <footer>
     <div class="social_media">
       <div class="icon_container">
-      <a href="https://discord.gg/8RuzybNqSm"><i class="fab fa-discord fa-2xl"></i></a> 
-      <a href="https://www.instagram.com/bcitcomputingclub/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-      <i class="fa-brands fa-linkedin fa-2xl"></i>
-      <i class="fa-brands fa-facebook fa-2xl"></i>
-    </div>
+        <a href="https://discord.gg/8RuzybNqSm"><i class="fab fa-discord fa-2xl"></i></a>
+        <a href="https://www.instagram.com/bcitcomputingclub/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+      </div>
     </div>
   </footer>
 </body>
