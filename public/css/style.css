@@ -3,16 +3,17 @@ body{
 }
 .topnav {
     text-align: right;
+    font-size: 50px;
+    margin: 10px;
+    
 }
 .topnav a:hover {
     color: lightblue;
   }
  
-a {
-    font-size: 50px;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
+.topnav a{
+  text-decoration: none;
+  color: white;
 }
 .topnav .icon {
   display: none;
@@ -36,12 +37,21 @@ h1 {
   font-size: 50px;
   padding: 10px;
 }
+.contact_container{
+  color: white;
+  background-color: #003366;
+}
 h3 {
     font-size: 50px;
     color:#003366;
 }
 footer{
     background-image: linear-gradient(blue, white);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
 
 }
 /* Style inputs with type="text", select elements and textareas */
@@ -74,6 +84,7 @@ input[type=text], select, textarea {
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
+    color: black;
     background-color: #f2f2f2;
     padding: 20px;
   }
@@ -126,11 +137,32 @@ input[type=text], select, textarea {
   font-size: 60px;
 }
 
+.social_media{
+  display: flex;
+  padding: 30px;
+  background-color: #003366;
+  justify-content: left;
+}
+.icon_container{
+  margin-left: 00px;
+}
+i{
+  color: #f1f1f1;
+  size: 10px;
+  margin: 10px;
+  margin-left: 15px;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .overlay{
     display:contents;
     overflow-x: auto;
+  }
+  .icon_container{
+    margin: 0;
+  }
+  .social_media{
+    justify-content: center;
   }
   .overlay a {font-size: 20px}
   body{

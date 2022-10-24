@@ -8,5 +8,5 @@ app.listen(process.env.PORT || 5000, function (err) {
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.sendFile('main.html', {root: __dirname })
+    res.sendFile('/public/pages/main.html', {root: __dirname })
 });
