@@ -4,7 +4,7 @@ $userEmail = $_POST['email'];
 $messageSubject = $_POST['subject'];
 $message = $_POST['message'];
 
-$to = 'bcitcomputingclub@gmail.com';
+$to = 'chanjoseph51@yahoo.ca';
 $body = "";
 
 $body .= "From: ".$userName. "\r\n";
